@@ -34,28 +34,30 @@ h1, h2, h3 {
 }
 
 .item-flex {
-    width: 50%;
+    width: 45%;
     margin-top: 30px;
+    margin: auto;
 }
 .item-flex:nth-child(1){
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
 .item-flex:nth-child(1) h1{
-    width: 60%;
-    margin-left: -100px;
+    width: 70%;
     margin-top: 10px;
     color: hsl(300, 43%, 22%);
+    font-size: 45px;
+    margin-right: 16.5%;
 }
 .item-flex:nth-child(1) p{
-    width: 80%;
+    width: 85%;
     line-height: 20px;
-    font-size: 13px;
+    font-size: 15px;
     color: hsl(303, 10%, 53%);
     font-weight: 500;
+    
 }
 
 .item-flex:nth-child(2) {
@@ -63,31 +65,31 @@ h1, h2, h3 {
     flex-direction: column;
 }
 
-.item-flex:nth-child(2) div{
-    width: 70%;
-    height: 50px;
+.cont-rate{
+    margin-top: 30px;
     background-color: hsl(300, 24%, 96%);
-    margin-top: 20px;
+    border-radius: 10px;
     display: flex;
-    border-radius: 9px;
     align-items: center;
+    height: 60px;
+    width: 430px;
 }
-.item-flex:nth-child(2) div picture{
-    margin-left: 20px;
+.cont-rate:nth-child(2){
+    margin-left: 50px;
 }
-.item-flex:nth-child(2) div picture img{
+.cont-rate:nth-child(3){
+    margin-left: 100px;
+}
+.stars{
+   margin-left: 25px;
+}
+.stars img{
     margin-inline: 3px;
 }
-.item-flex:nth-child(2) div h2{
-    font-size: 12px;
-    margin-left: 15px;
+.cont-rate h2{
+    font-size: 16px;
     color: hsl(300, 43%, 22%);
-}
-.item-flex:nth-child(2) div:nth-child(2){
-    margin-left: 45px;
-}
-.item-flex:nth-child(2) div:nth-child(3){
-    margin-left: 90px;
+    margin-left: 25px;
 }
 
 /*css for the bottom comments*/
@@ -100,14 +102,20 @@ h1, h2, h3 {
 
 .item-bottom{
     width: 28%;
-    height: 190px;
+    height: 220px;
     display: flex;
     flex-wrap: wrap;
     background-color: hsl(300, 43%, 22%);
     margin-inline: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
     align-items: center;
     justify-content: center;
+}
+.item-bottom:nth-child(2){
+    margin-top: 30px;
+}
+.item-bottom:nth-child(3){
+    margin-top: 60px;
 }
 .item-bottom img{
     width: 40px;
@@ -120,7 +128,7 @@ h1, h2, h3 {
 .item-bottom h3{
     width: 40%;
     margin-top: 5px;
-    font-size: 11px;
+    font-size: 14px;
     margin-top: 20px;
     color: hsl(0, 0%, 100%);
     text-align: center;
@@ -134,13 +142,13 @@ h1, h2, h3 {
 }
 .item-bottom p{
     margin: 0;
-    font-size: 11px;
+    font-size: 13px;
     color: hsl(0, 0%, 100%);
     text-align: left;
     width: 87%;
-    height: 75px;
+    height: 85px;
     line-height: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 
@@ -161,51 +169,53 @@ h1, h2, h3 {
     }
     .item-flex{
         width: 100%;
+        height: 100%;
         justify-content: center;
         align-items: center;
     }
     .item-flex:nth-child(1) h1{
         margin: 0;
-        width: 250px;
+        font-size: 40px;
+        width: 330px;
         height: 150px;
+        text-align: center;
     }
     .item-flex:nth-child(1) p{
-        width: 90%;
+        width: 100%;
         height: 100px;
-        margin: 0;
         text-align: center;
     }
     .item-flex:nth-child(2){
         margin-top: 2px;
     }
-    .item-flex:nth-child(2) div{
-        width: 90%;
+    .cont-rate{
+        width: 95%;
         height: 70px;
-        margin-top: 30px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    .item-flex:nth-child(2) div:nth-child(2){
+    .cont-rate:nth-child(2){
         margin-left: 0;
     }
-    .item-flex:nth-child(2) div:nth-child(3){
+    .cont-rate:nth-child(3){
         margin-left: 0;
     }
-    .item-flex div h2{
-       margin-left: 0;
-       margin-top: 10px;
-       font-size: 14px;
+    .cont-rate h2{
+        margin-top: 15px;
     }
-    
     .bottom-flex{
-        width: 100%;
-        height: 100%;
         flex-direction: column;
-        margin-top: 10px;
     }
     .item-bottom{
-        width: 300px;
-        margin-top: 30px;
+        width: 90%;
+        margin-inline: 0;
+    }
+
+    .item-bottom:nth-child(2){
+        margin-top: 20px;
+    }
+    .item-bottom:nth-child(3){
+        margin-top: 20px;
     }
 }
